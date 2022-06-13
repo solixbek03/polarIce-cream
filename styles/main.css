@@ -1,0 +1,665 @@
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src:  url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src:  url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-700.woff') format('woff'); 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "roboto", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container{
+  max-width: 1125px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.background{
+  background-color: #F2CEDA;
+
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  list-style-type: none;
+}
+
+.header-list-link{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #150101;
+  text-decoration: none;
+}
+
+.header-list-link:hover{
+  color: #D23166;
+}
+
+.header-list-link:active{
+  color: #87153b;
+}
+
+.button{
+  width: 165px;
+  height: 49px;
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FAFAFA;
+  background-color: #D23166;
+  border: 2px solid #D23166;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover{
+  color: #D23166;
+  background-color: #FAFAFA;
+  border: 2px solid #D23166;
+}
+
+.button:active{
+  color: #87153b;
+  background-color: #FAFAFA;
+  border: 2px solid #87153b;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 37px;
+}
+
+.hero-box{
+  width: 665;
+  height: 364px;
+}
+
+.hero-box-span{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #0F0101;
+}
+
+.hero-box-heading{
+  margin: 0;
+  margin-bottom: 35;
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57.33px;
+  line-height: 120.5%;
+  color: #0F0101
+}
+
+.hero-box-heading-span{
+  color: #D23166;
+}
+
+.hero-box-text{
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0F0101;
+}
+
+.hero-bgImage{
+  width: 895px;
+  height: 743px;
+  background-repeat: no-repeat;
+  background-size: 120%,90%,50%;
+  background-position: 17px 160px,100px 40px,190px 260px;
+  background-image: url("../img/deliciosCream.png"),
+                    url("../img/deliciousIce-cream.png"),
+                    url("../img/cricle.png");
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;
+  width: 1117px;
+  margin-top: 62px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-items{
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 7px;
+}
+
+.list-items:hover{
+  background: #FFFFFF;
+  box-shadow: 20px 20px 50px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+.browSugar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.browSugar-box{
+  width: 442px;
+  height: 256.71px
+}
+
+.browSugar-box-heading{
+  margin: 0;
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 49px;
+  color: #150101;
+}
+
+.browSugar-box-text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #150101;
+}
+
+
+.brownSugar-bgImage{
+  width: 600px;
+  height: 400px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/brownSugar.png");
+}
+
+.product{
+  width: 1121px;
+  height: 2306px;
+}
+
+.product-heading{
+  text-align: center;
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 61px;
+  color: #150101;
+}
+
+.product-list{
+  display: flex;
+  width: 1100px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-list-link{
+  text-decoration:none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.product-list-link:hover{
+  font-weight: bolder;
+  box-shadow: 0px 3px #D64374;
+}
+
+.product-Icecream{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 564px;
+}
+
+.product-Icecream-bgImage{
+  width: 600px;
+  height: 400px;
+  background-position: 0px 55px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/brownBread.png");
+}
+
+.product-Icecream-box{
+  width: 455px;
+}
+
+.product-Icecream-box-heading{
+  margin: 0;
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.product-icecream-box-text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.product-Icecream-box-span{
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.product-Icecream-box-span-del{
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-decoration-line: line-through;
+  color: #000000;
+}
+
+.product-Icecream:nth-child(2n){
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.product-chocolate-bgImage{
+  width: 600px;
+  height: 400px;
+  background-position: 0px -5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/CayenneChocolate.png");
+}
+
+.product-sweet-bgImage{
+  width: 600px;
+  height: 400px;
+  background-position: 0px -5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/sweetCorn.png");
+}
+
+.product-customer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
+.product-customer-profile{
+  width: 322px;
+}
+
+.product-customer-profile-avatar{
+  display: flex;
+  width: 322px;
+}
+
+.product-customer-profile-avatar-heading{
+  margin: 0;
+}
+
+.product-customer-profile-text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product-customer-profile-bgImage{
+  display: flex;
+  width: 200px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-customer-profile-bgImage-avatar{
+  width: 150px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: 55px 0px,20px 10px,110px 10px;
+  background-size:  60px,40px,40px;
+  background-image: url("../img/customer.png"),
+                    url("../img/customer-boy.png"),
+                    url("../img/customer-small.png");
+}
+
+.product-customer-bgImage{
+  width: 564px;
+  height: 442px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/IceCream.png");
+}
+
+.smiple{
+  display: flex;
+  width: 1110px;
+  height: 730px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.smiple-bgImage{
+  width: 360px;
+  height: 702.99px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/smiple-way.png");
+  border-radius: 33px;
+  box-shadow: -15px 15px 15px gray;
+}
+
+.smiple-box{
+  width: 621px;
+}
+
+.smiple-box-heading{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44.2px;
+  line-height: 52px;
+  color: #000000;
+}
+
+.smiple-box-text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #0F0101;
+}
+
+.smiple-box-list{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.smiple-box-list-item{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.smiple-box-list-item-link{
+  margin-left: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact{
+  text-align: center;
+  margin-top: 111px;
+}
+
+.contact-heading{
+  margin-bottom: 36px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+
+
+.contact-form-input{
+  width: 300px;
+  height: 75px;
+  padding: 25px;
+  margin-bottom: 37px;
+  margin-right:56px ;
+  background-color: #FFFFFF;
+  border: 1px solid #FFA3A3;
+  border-radius: 5px;
+}
+
+.contact-form-select{
+  width: 300px;
+  height: 75px;
+  padding: 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #FFA3A3;
+  border-radius: 5px;
+}
+
+.contact-form-comments{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact-form-comments-text{
+  width: 500px;
+  height: 75px;
+  padding: 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #FFA3A3;
+  border-radius: 5px;
+}
+
+.button-second{
+  width: 165px;
+  height: 75px;
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FAFAFA;
+  background-color: #D23166;
+  border: 2px solid #D23166;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-second:hover{
+  color: #D23166;
+  background-color: #FAFAFA;
+  border: 2px solid #D23166;
+}
+
+.button-second:active{
+  color: #87153b;
+  background-color: #FAFAFA;
+  border: 2px solid #87153b;
+}
+
+.background-footer{
+  background-color: #0A0808;
+  margin-top: 110px;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-info{
+  width: 250px;
+}
+
+.footer-info-text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+.footer-info-smallheading{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.footer-info-list{
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-list{
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-list-link{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.footer-list-link:hover{
+  color: skyblue;
+}
+
+.form-heading{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.form-input{
+  width: 263px;
+  height: 55px;
+  padding: 25px;
+}
+
+.button-seconds{
+  width: 125px;
+  height: 55px;
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FAFAFA;
+  background-color: #D23166;
+  border: 2px solid #D23166;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-seconds:hover{
+  color: #D23166;
+  background-color: #FAFAFA;
+  border: 2px solid #D23166;
+}
+
+.button-seconds:active{
+  color: #87153b;
+  background-color: #FAFAFA;
+  border: 2px solid #87153b;
+}
+
